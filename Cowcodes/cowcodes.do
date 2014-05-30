@@ -204,11 +204,12 @@
 		replace cowcode =	337	if country == "Tuscany";		
 		replace cowcode =	947	if country == "Tuvalu";		
 		replace cowcode =	329	if country == "Two Sicilies";			
-		replace cowcode = 365 if country == "Russian Federation" | country == "USSR" | country == "Russia" | country == "Soviet Union" | country == "Russian Federat" | country == "Ussr" | country == "Russia (Soviet Union)";
+		replace cowcode = 365 if country == "Russian Federation" | country == "USSR" | country == "Russia" | country == "Soviet Union" | country == "Russian Federat" | country == "Ussr" | country == "Russia (Soviet Union)"
+							   | country == "Russia (USSR)";
 		replace cowcode = 500 if country == "Uganda" ;
 		replace cowcode =	369	if country == "Ukraine";
 		replace cowcode =	696	if country == "United Arab Emirates" | country == "UAE" | country == "United Arab Emir";
-		replace cowcode = 200 if country == "United Kingdom" | country == "UK" | country == "Uk";
+		replace cowcode = 200 if country == "United Kingdom" | country == "UK" | country == "Uk" | country == "Unit.Kingd.";
 		replace cowcode = 2 if country == "United States" | country == "USA"  | country == "United States of America" | country == "Usa";
 		replace cowcode = 165 if country == "Uruguay" ;
 		replace cowcode =	704	if country == "Uzbekistan";
