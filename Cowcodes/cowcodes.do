@@ -25,7 +25,7 @@
 		replace cowcode = 434 if country == "Benin" ;
 		replace cowcode =	760	if country == "Bhutan";	
 		replace cowcode = 145 if country == "Bolivia" ;
-		replace cowcode =	346	if country == "Bosnia and Herzegovina" | country == "Bosnia-Herz" | country == "Bosnia" | country == "Bosnia and Herzego" | country == "Bosnia & Herzegovina";		
+		replace cowcode =	346	if country == "Bosnia and Herzegovina" | country == "Bosnia-Herz" | country == "Bosnia" | country == "Bosnia and Herzego" | country == "Bosnia & Herzegovina" | country == "Bosnia and Herzgegovina";		
 		replace cowcode = 571 if country == "Botswana" ;
 		replace cowcode = 140 if country == "Brazil" ;
 		replace cowcode =	835	if country == "Brunei" | country == "Brunei Darussalam" ;	
@@ -44,14 +44,15 @@
 		replace cowcode = 100 if country == "Colombia" | country == "Culombia" ;
 		replace cowcode = 581 if country == "Comoros" | country == "Comoro Island" | country == "Comoro Is.";
 		replace cowcode = 484 if country == "Congo, Rep." | country == "Congo" | country == "Congo-Brazzaville" | country == "Congo, Republic of" | country == "Rep. of the Congo"
-							   | country == "Rep. Of Congo" | country == "Congo Brazzaville" | country == "Congo, Republic of the" | country == "Congo, Republic";
+							   | country == "Rep. Of Congo" | country == "Congo Brazzaville" | country == "Congo, Republic of the" | country == "Congo, Republic" | country == "Congo. Republic"
+							   | country == "Congo  Republic" | country == "Congo Republic";
 		replace cowcode = 94 if country == "Costa Rica" | country == "Costarica";
 		replace cowcode =	344	if country == "Croatia";	
 		replace cowcode =	40	if country == "Cuba";	
 		replace cowcode =	352	if country == "Cyprus";	
 		replace cowcode =	316	if country == "Czech Republic" | country == "Czech Rep." | country == "Czechrep" | country == "Czech Republik";
 		replace cowcode = 315 if country == "Czechoslovakia" ;
-		replace cowcode = 390 if country == "Denmark" ;
+		replace cowcode = 390 if country == "Denmark" | country == "Denmark ";
 		replace cowcode = 522 if country == "Djibouti" ;
 		replace cowcode =	54	if country == "Dominica";
 		replace cowcode = 42 if country == "Dominican Republic" | country == "Dominican Rep" | country == "Dom. Rep." | country == "Dominican Rep.";
@@ -95,7 +96,8 @@
 		replace cowcode = 666 if country == "Israel" ;
 		replace cowcode = 325 if country == "Italy" ;
 		replace cowcode = 437 if country == "Cote d'Ivoire" | country == "Ivory Coast" | country == "Côte d'Ivoire" | country == "Cote d´Ivoire" | country == "Cote dIvoire"
-							   | country == "Cote d\`Ivoire" | country == "Cote D’Ivoire" | country == "Cote D\`Ivoire" | country =="Côte-d\'Ivoire" | country == "Cote d´Ivoire" | country == "Cote d?Ivoire";
+							   | country == "Cote d\`Ivoire" | country == "Cote D’Ivoire" | country == "Cote D\`Ivoire" | country =="Côte-d\'Ivoire" | country == "Cote d´Ivoire" | country == "Cote d?Ivoire"
+							   | country == "Côte-d\'Ivoire" | country == "Cote d´Ivoire" | country == "Côte d´Ivoire";
 		replace cowcode = 51 if country == "Jamaica" ;
 		replace cowcode = 740 if country == "Japan" ;
 		replace cowcode = 663 if country == "Jordan" ;
@@ -115,7 +117,7 @@
 		replace cowcode =	223	if country == "Liechtenstein";	
 		replace cowcode =	368	if country == "Lithuania";
 		replace cowcode = 212 if country == "Luxembourg" ;
-		replace cowcode =	343	if country == "Macedonia" | country == "Macedonia, FYR" | country == "Macedonia FYR" | country == "Macedonia,FYR";
+		replace cowcode =	343	if country == "Macedonia" | country == "Macedonia, FYR" | country == "Macedonia FYR" | country == "Macedonia,FYR" | country == "FYR Macedonia" | country == "Macedonia (Former Yugoslav Republic of)";
 		replace cowcode = 580 if country == "Madagascar" ;
 		replace cowcode = 553 if country == "Malawi" ;
 		replace cowcode = 820 if country == "Malaysia" ;
@@ -128,7 +130,7 @@
 		replace cowcode =	280	if country == "Mecklenburg Schwerin";	
 		replace cowcode = 70 if country == "Mexico" ;
 		replace cowcode =	332	if country == "Modena";		
-		replace cowcode =	359	if country == "Moldova" | country == "Moldovia" | country == "Republic of Moldova";		
+		replace cowcode =	359	if country == "Moldova" | country == "Moldovia" | country == "Republic of Moldova" | country == "Moldovaa";		
 		replace cowcode =	221	if country == "Monaco";		
 		replace cowcode = 712 if country == "Mongolia" ;
 		replace cowcode =	341	if country == "Montenegro";
@@ -143,7 +145,7 @@
 		replace cowcode = 93 if country == "Nicaragua" ;
 		replace cowcode = 436 if country == "Niger" ;
 		replace cowcode = 475 if country == "Nigeria" ;
-		replace cowcode =	731	if country == "North Korea" | country == "Korea, Dem. Rep." | country == "Korea, North" | country == "PRK" | country == "Korea, Dem.Rep" | country == "Korea North";
+		replace cowcode =	731	if country == "North Korea" | country == "Korea, Dem. Rep." | country == "Korea, North" | country == "PRK" | country == "Korea, Dem.Rep" | country == "Korea North" | country == "Korea (North)";
 		replace cowcode = 385 if country == "Norway" ;
 		replace cowcode =	698	if country == "Oman";
 		replace cowcode = 770 if country == "Pakistan" ;
@@ -177,11 +179,11 @@
 		replace cowcode = 520 if country == "Somalia" ;
 		replace cowcode = 560 if country == "South Africa" | country == "S. Africa";
 		replace cowcode = 732 if country == "Korea, Rep." | country == "South Korea" | country == "Korea, South" | country == "ROK" | country == "Korea, Republic of" 
-							   | country == "Republic of Korea" | country == "S. Korea" | country == "Korea South" | country == "South Korea ";
+							   | country == "Republic of Korea" | country == "S. Korea" | country == "Korea South" | country == "South Korea " | country == "Korea (South)";
 		replace cowcode = 230 if country == "Spain" ;
 		replace cowcode = 780 if country == "Sri Lanka" | country == "Sri Lanka (Ceylon)" ;
 		replace cowcode =	60	if country == "St. Kitts and Nevis" | country == "St. Kitts & Nevis";		
-		replace cowcode =	56	if country == "St. Lucia";		
+		replace cowcode =	56	if country == "St. Lucia" | country == "Saint Lucia";		
 		replace cowcode =	57	if country == "St. Vincent and the Grenadines" | country == "St. Vincent & Grenadines" | country == "St.Vincent & Grenadines" | country == "Saint Vincent and the Grenadines";		
 		replace cowcode = 625 if country == "Sudan" ;
 		replace cowcode = 115 if country == "Suriname" | country == "Surinam" ;
@@ -190,7 +192,7 @@
 		replace cowcode = 225 if country == "Switzerland" ;
 		replace cowcode = 652 if country == "Syrian Arab Republic" | country == "Syria" | country == "Syrian Arab Rep" | country == "Syria ";
 		replace cowcode = 713 if country == "Taiwan" | country == "Taiwan, China" ;
-		replace cowcode =	702	if country == "Tajikistan";
+		replace cowcode =	702	if country == "Tajikistan" | country == "Taijikistan";
 		replace cowcode = 510 if country == "Tanzania" | country == "United Republic of Tanzania";
 		replace cowcode = 800 if country == "Thailand" ;
 		replace cowcode = 461 if country == "Togo" ;
@@ -223,7 +225,7 @@
 		replace cowcode = 490 if country == "Zaire" | country == "Congo, Dem. Rep." | country == "Democratic Republic of the Congo" | country == "Dem. Rep. Congo" 
 							   | country == "Congo-Kinshasa" | country == "Congo (DRC)" | country == "Congo, Democratic Republic of" | country == "Dem. Rep. of the Congo"
 							   | country == "Dem. Rep. of Congo (Zaire)" | country == "Congo, Dem. Republic" | country == "Congo Kinshasa" | country == "Democratic Republic of Congo (Zaire) "
-							   | country == "Congo, Democratic Republic";
+							   | country == "Congo, Democratic Republic" | country == "Congo. Democratic Republic" | country == "Democratic Republic of Congo" | country == "Democratic Republic of the Congo ";
 		replace cowcode = 551 if country == "Zambia" ;
 		replace cowcode =	511	if country == "Zanzibar";		
 		replace cowcode =	552	if country == "Zimbabwe" | country == "Zimbabwe (Rhodesia)";	
