@@ -8,6 +8,8 @@ library(RCurl)
 
 div10 <- function(x) x / 10
 
+trim <- function (x) gsub("^\\s+|\\s+$", "", x)
+
 i <- 1998
 while(i  < 2014) {
   if(i==1998) {theurl <- "http://archive.transparency.org/policy_research/surveys_indices/cpi/previous_cpi/1998"}
@@ -266,8 +268,8 @@ while(i  < 2014) {
     cpiDATA$numSurveys <- as.numeric(as.character(cpiDATA$numSurveys))
     cpiDATA$score <- as.numeric(as.character(cpiDATA$score))
     cpiDATA$rank <- as.numeric(as.character(cpiDATA$rank))
-    cpiDATA$country <- lapply(cpiDATA$country, as.character)
-    cpiDATA$conf.int <- lapply(cpiDATA$conf.int, as.character)
+    cpiDATA$country <- sapply(cpiDATA$country, as.character)
+    cpiDATA$conf.int <- sapply(cpiDATA$conf.int, as.character)
   }
   if(i == 2010) {
     cpiDATA$numSurveys <- as.numeric(as.character(cpiDATA$numSurveys))
@@ -278,8 +280,9 @@ while(i  < 2014) {
     cpiDATA$maxRange <- as.numeric(as.character(cpiDATA$maxRange))
     cpiDATA$lowBound <- as.numeric(as.character(cpiDATA$lowBound))
     cpiDATA$hiBound <- as.numeric(as.character(cpiDATA$hiBound))
-    cpiDATA$country <- lapply(cpiDATA$country, as.character)
-    cpiDATA$conf.int <- lapply(cpiDATA$conf.int, as.character)
+    cpiDATA$country <- sapply(cpiDATA$country, as.character)
+    cpiDATA$country <- sapply(cpiDATA$country, trim)
+    cpiDATA$conf.int <- sapply(cpiDATA$conf.int, as.character)
   }
   if(i == 2011) {
     cpiDATA$minRange <- as.numeric(as.character(cpiDATA$minRange))
@@ -292,11 +295,11 @@ while(i  < 2014) {
     cpiDATA$maxRange <- as.numeric(as.character(cpiDATA$maxRange))
     cpiDATA$lowBound <- as.numeric(as.character(cpiDATA$lowBound))
     cpiDATA$hiBound <- as.numeric(as.character(cpiDATA$hiBound))
-    cpiDATA$score <- lapply(cpiDATA$score, div10 )
-    cpiDATA$minRange <- lapply(cpiDATA$minRange, div10 )
-    cpiDATA$maxRange <- lapply(cpiDATA$maxRange, div10 )
-    cpiDATA$lowBound <- lapply(cpiDATA$lowBound, div10 )
-    cpiDATA$hiBound <- lapply(cpiDATA$hiBound, div10 )
+    cpiDATA$score <- sapply(cpiDATA$score, div10 )
+    cpiDATA$minRange <- sapply(cpiDATA$minRange, div10 )
+    cpiDATA$maxRange <- sapply(cpiDATA$maxRange, div10 )
+    cpiDATA$lowBound <- sapply(cpiDATA$lowBound, div10 )
+    cpiDATA$hiBound <- sapply(cpiDATA$hiBound, div10 )
   }
     
   cpiDATA$year <- i
@@ -349,18 +352,18 @@ source_https <- function(url, ...) {
 }
 
 ###Apply cowcodes
-source_https("https://raw.githubusercontent.com/jasonjensen/statsTools/master/cowcodes.R")
-
+source_https("https://raw.githubusercontent.com/jasonjensen/statsTools/master/Cowcodes/cowcodes.R")
 
 cpiTimeSeries <- assignCowCodes(cpiTimeSeries)
 
 #cleanup
-i <- 1998
-while (i < 2014) {
-  dataname <- paste("cpi", i, sep = "")
-  assign(dataname, NULL)
-  i <- i + 1
-}
-data <- NULL
+# i <- 1998
+# while (i < 2014) {
+#   dataname <- paste("cpi", i, sep = "")
+#   assign(dataname, NULL)
+#   i <- i + 1
+# }
+# data <- NULL
 
 head(cpiTimeSeries)
+
