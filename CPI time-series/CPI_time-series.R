@@ -356,14 +356,14 @@ source_https("https://raw.githubusercontent.com/jasonjensen/statsTools/master/Co
 
 cpiTimeSeries <- assignCowCodes(cpiTimeSeries)
 
-#cleanup
-# i <- 1998
-# while (i < 2014) {
-#   dataname <- paste("cpi", i, sep = "")
-#   assign(dataname, NULL)
-#   i <- i + 1
-# }
-# data <- NULL
+cleanup
+i <- 1998
+while (i < 2014) {
+  dataname <- paste("cpi", i, sep = "")
+  assign(dataname, NULL)
+  i <- i + 1
+}
+data <- NULL
 
 head(cpiTimeSeries)
 
