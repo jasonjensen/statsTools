@@ -35,7 +35,7 @@
 		replace cowcode =	811	if country == "Cambodia";	
 		replace cowcode = 471 if country == "Cameroon" ;
 		replace cowcode = 20 if country == "Canada" ;
-		replace cowcode = 402 if country == "Cape Verde" | country == "Cape Verde Island" | country == "C. Verde Is." ;
+		replace cowcode = 402 if country == "Cape Verde" | country == "Cape Verde Island" | country == "C. Verde Is." | country == "Cabo Verde" ;
 		replace cowcode = 482 if country == "Central African Republic" | country == "Central Afr. Rep." | country == "Cen. African Rep." | country == "Cent. Af. Rep."
 							   | country == "Central African Rep." | country == "Central African Re";
 		replace cowcode = 483 if country == "Chad" ;
@@ -264,20 +264,26 @@
 		/*WDI geographic areas*/
 		replace cowcode = 2010 if country == "East Asia & Pacific (all income levels)";
 		replace cowcode = 2011 if country == "East Asia & Pacific (developing only)";
+		replace cowcode = 2012 if country == "East Asia and the Pacific (IFC classification)";
 		replace cowcode = 2020 if country == "Europe & Central Asia (all income levels)";
 		replace cowcode = 2021 if country == "Europe & Central Asia (developing only)";
+		replace cowcode = 2022 if country == "Europe and Central Asia (IFC classification)";
 		replace cowcode = 2030 if country == "Latin America & Caribbean (all income levels)";
 		replace cowcode = 2031 if country == "Latin America & Caribbean (developing only)";
+		replace cowcode = 2032 if country == "Latin America and the Caribbean (IFC classification)";
 		replace cowcode = 2040 if country == "Middle East & North Africa (all income levels)";
 		replace cowcode = 2041 if country == "Middle East & North Africa (developing only)";
+		replace cowcode = 2042 if country == "Middle East and North Africa (IFC classification)";
 		replace cowcode = 2050 if country == "Sub-Saharan Africa (all income levels)";
 		replace cowcode = 2051 if country == "Sub-Saharan Africa (developing only)";
+		replace cowcode = 2052 if country == "Sub-Saharan Africa (IFC classification)";
 		replace cowcode = 2060 if country == "North America";
 		replace cowcode = 2070 if country == "European Union";
 		replace cowcode = 2071 if country == "Euro area";
 		replace cowcode = 2072 if country == "OECD members";
 		replace cowcode = 2080 if country == "Arab World";
 		replace cowcode = 2085 if country == "South Asia";
+		replace cowcode = 2086 if country == "South Asia (IFC classification)";
 		replace cowcode = 2090 if country == "Small states";
 		replace cowcode = 2091 if country == "Pacific island small states";
 		replace cowcode = 2092 if country == "Caribbean small states";
