@@ -25,7 +25,7 @@
 		replace cowcode = 434 if country == "Benin" ;
 		replace cowcode =	760	if country == "Bhutan";	
 		replace cowcode = 145 if country == "Bolivia" ;
-		replace cowcode =	346	if country == "Bosnia and Herzegovina" | country == "Bosnia-Herz" | country == "Bosnia" | country == "Bosnia and Herzego" | country == "Bosnia & Herzegovina" | country == "Bosnia and Herzgegovina"  | country == "Bosnia-Herzgegovina";		
+		replace cowcode =	346	if country == "Bosnia and Herzegovina" | country == "Bosnia-Herz" | country == "Bosnia" | country == "Bosnia and Herzego" | country == "Bosnia & Herzegovina" | country == "Bosnia and Herzgegovina"  | country == "Bosnia-Herzegovina";		
 		replace cowcode = 571 if country == "Botswana" ;
 		replace cowcode = 140 if country == "Brazil" ;
 		replace cowcode =	835	if country == "Brunei" | country == "Brunei Darussalam" ;	
