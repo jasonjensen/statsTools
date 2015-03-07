@@ -36,7 +36,7 @@
 		replace	country	=	"Cameroon"	if	cowcode	==	471	;														
 		replace	country	=	"Canada"	if	cowcode	==	20	;														
 		replace	country	=	"Cape Verde"	if	cowcode	==	402	;														
-		replace	country	=	"Central African Repubublic"	if	cowcode	==	482	;														
+		replace	country	=	"Central African Republic"	if	cowcode	==	482	;														
 		replace	country	=	"Chad"	if	cowcode	==	483	;														
 		replace	country	=	"Chile"	if	cowcode	==	155	;														
 		replace	country	=	"China"	if	cowcode	==	710	;														
@@ -306,7 +306,17 @@
 		/*Barro and Lee additions*/																						
 		replace	country	=	"Reunion"	if	cowcode	==	1024	;														
 																								
-																								
+		/*All the Ginis additions*/
+		replace country = "French Guiana" if cowcode == 1025;
+		replace country = "Guadeloupe" if cowcode == 1026;
+		
+		/*Institute for Democracy And Electoral Assistance additions*/
+		replace country == "Cook Islands" if cowcode == 1027;
+		replace country = "Faroe Islands" if cowcode == 1028;
+		replace country = "Gibraltar" if cowcode == 1029;
+		replace country = "Montserrat" if cowcode == 1030;
+		replace country = "Virgin Islands, British" if cowcode == 1031;
+																						
 																								
 																								
 																								

@@ -311,6 +311,13 @@ data$country <- ifelse(data$cowcode == 1024 , 'Reunion'  , data$country)
 data$country <- ifelse(data$cowcode == 1025 , 'French Guiana' , data$country)
 data$country <- ifelse(data$cowcode == 1026 , 'Guadeloupe' , data$country)
 
+#Institute for Democracy And Electoral Assistance additions
+data$cowcode <- ifelse(data$country == 1027,  'Cook Islands' , data$cowcode)
+data$cowcode <- ifelse(data$country == 1028, 'Faroe Islands' , data$cowcode)
+data$cowcode <- ifelse(data$country == 1029, 'Gibraltar' , data$cowcode)
+data$cowcode <- ifelse(data$country == 1030, 'Montserrat' , data$cowcode)
+data$cowcode <- ifelse(data$country == 1031, 'Virgin Islands, British' , data$cowcode)
+
 
 
 return(data)
