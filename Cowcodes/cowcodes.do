@@ -37,16 +37,16 @@
 		replace cowcode = 20 if country == "Canada" ;
 		replace cowcode = 402 if country == "Cape Verde" | country == "Cape Verde Island" | country == "C. Verde Is." | country == "Cabo Verde" ;
 		replace cowcode = 482 if country == "Central African Republic" | country == "Central Afr. Rep." | country == "Cen. African Rep." | country == "Cent. Af. Rep."
-							   | country == "Central African Rep." | country == "Central African Re" | country == "Central African Repub";
+							   | country == "Central African Rep." | country == "Central African Re" | country == "Central African Repub" | country == "Central African Rep";
 		replace cowcode = 483 if country == "Chad" ;
 		replace cowcode = 155 if country == "Chile" ;
-		replace cowcode = 710 if country == "China" | country == "PRC" | country == "China, P.R.: Mainland" | country == "China, P.R.";
+		replace cowcode = 710 if country == "China" | country == "PRC" | country == "China, P.R.: Mainland" | country == "China, P.R." | country == "China, Mainland";
 		replace cowcode = 100 if country == "Colombia" | country == "Culombia" ;
 		replace cowcode = 581 if country == "Comoros" | country == "Comoro Island" | country == "Comoro Is.";
 		replace cowcode = 484 if country == "Congo, Rep." | country == "Congo" | country == "Congo-Brazzaville" | country == "Congo, Republic of" | country == "Rep. of the Congo"
 							   | country == "Rep. Of Congo" | country == "Congo Brazzaville" | country == "Congo, Republic of the" | country == "Congo, Republic" | country == "Congo. Republic"
 							   | country == "Congo  Republic" | country == "Congo Republic" | country == "Congo (Brazzaville)" | country == "Congo, Rep. Of" | country == "Congo, Rep. of"
-							   | country == "Republic of The Congo (Brazzaville)";
+							   | country == "Republic of The Congo (Brazzaville)" | country == "Congo, Rep";
 		replace cowcode = 94 if country == "Costa Rica" | country == "Costarica";
 		replace cowcode =	344	if country == "Croatia";	
 		replace cowcode =	40	if country == "Cuba";	
@@ -169,14 +169,14 @@
 		replace cowcode = 517 if country == "Rwanda" ;
 		replace cowcode =	990	if country == "Samoa" | country == "Western Samoa";		
 		replace cowcode =	331	if country == "San Marino";		
-		replace cowcode =	403	if country == "Sao Tome and Principe" | country == "SaoTome & Principe" | country == "Sao Tome & Principe" | country == "SÃ£o TomÃ© and Principe";		
+		replace cowcode =	403	if country == "Sao Tome and Principe" | country == "SaoTome & Principe" | country == "Sao Tome & Principe" | country == "SÃ£o TomÃ© and Principe" | country == "São Tomé & Príncipe";		
 		replace cowcode =	670	if country == "Saudi Arabia";		
 		replace cowcode =	269	if country == "Saxony";		
 		replace cowcode = 433 if country == "Senegal" ;
 		replace cowcode = 591 if country == "Seychelles" | country == "Seychelle" ;
 		replace cowcode = 451 if country == "Sierra Leone" ;
 		replace cowcode = 830 if country == "Singapore" ;
-		replace cowcode =	317	if country == "Slovakia" | country == "Slovak Republic";		
+		replace cowcode =	317	if country == "Slovakia" | country == "Slovak Republic" | country == "Slovak Rep";		
 		replace cowcode =	349	if country == "Slovenia" | country == "Republic of Slovenia";		
 		replace cowcode = 940 if country == "Solomon Islands" | country == "Solomon Is." ;
 		replace cowcode = 520 if country == "Somalia" ;
@@ -232,7 +232,7 @@
 							   | country == "Congo-Kinshasa" | country == "Congo (DRC)" | country == "Congo, Democratic Republic of" | country == "Dem. Rep. of the Congo"
 							   | country == "Dem. Rep. of Congo (Zaire)" | country == "Congo, Dem. Republic" | country == "Congo Kinshasa" | country == "Democratic Republic of Congo (Zaire) "
 							   | country == "Congo, Democratic Republic" | country == "Congo. Democratic Republic" | country == "Democratic Republic of Congo" | country == "Democratic Republic of the Congo "
-							   | country == "Congo (Democratic Republic of the)" | country == "Congo, Dem. Rep. Of (Zaire)" | country == "Congo, Dem. Rep. of";
+							   | country == "Congo (Democratic Republic of the)" | country == "Congo, Dem. Rep. Of (Zaire)" | country == "Congo, Dem. Rep. of" | country == "Congo, Dem Rep";
 		replace cowcode = 551 if country == "Zambia" ;
 		replace cowcode =	511	if country == "Zanzibar";		
 		replace cowcode =	552	if country == "Zimbabwe" | country == "Zimbabwe (Rhodesia)";	
