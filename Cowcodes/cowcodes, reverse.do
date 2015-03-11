@@ -311,7 +311,7 @@
 		replace country = "Guadeloupe" if cowcode == 1026;
 		
 		/*Institute for Democracy And Electoral Assistance additions*/
-		replace country == "Cook Islands" if cowcode == 1027;
+		replace country = "Cook Islands" if cowcode == 1027;
 		replace country = "Faroe Islands" if cowcode == 1028;
 		replace country = "Gibraltar" if cowcode == 1029;
 		replace country = "Montserrat" if cowcode == 1030;
