@@ -318,7 +318,9 @@ data$cowcode <- ifelse(data$country == 1029, 'Gibraltar' , data$cowcode)
 data$cowcode <- ifelse(data$country == 1030, 'Montserrat' , data$cowcode)
 data$cowcode <- ifelse(data$country == 1031, 'Virgin Islands, British' , data$cowcode)
 
-
+#*Banking Regulations and Supervision additions
+data$cowcode <- ifelse(data$country == 1032, 'Jersey' , data$cowcode)
+data$cowcode <- ifelse(data$country == 1033, 'Guernsey' , data$cowcode)
 
 return(data)
 }

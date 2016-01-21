@@ -317,7 +317,9 @@
 		replace country = "Montserrat" if cowcode == 1030;
 		replace country = "Virgin Islands, British" if cowcode == 1031;
 																						
-																								
+		/*Banking Regulations and Supervision additions*/
+		replace country = "Jersey" if cowcode == 1032;
+		replace country = "Guernsey" if cowcode == 1033;																						
 																								
 																								
 																								
